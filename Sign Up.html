@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SIGN UP</title>
+ <style>
+ body {
+    background-image: url("background contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute
+    top: 101px;
+}
+  nav {
+    background-color: #E8E8E8;
+    list-style-type: none;
+    position:top
+    left: 228px;
+    top: 45px;
+}
+    .navlist {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+    .navlistitem {
+    float: left;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+    .navlistitem a {
+    text-decoration: none;
+    display: block;
+    padding-top: 14px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 16px;
+    color: #000000;
+    margin-top: 6px;
+    margin-bottom: 9px;
+}
+    .navlistitem a:active {
+    background-color: #E3E3E3;
+}
+  
+    .navlistitem a:hover {
+    color: #919191;
+}
+button a {
+    color: #000000;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+
+  <div id="main" class="clearfix">
+  <nav>
+		<ul class="navlist">
+		<li class="navlistitem"><a href="Homepage.html">HOME</a> </li>
+		<li class="navlistitem"><a href="Biography.html">BIOGRAPHY</a></li>
+        <li class="navlistitem"><a href="Timetable.html">TIMETABLE</a> </li>
+		<li class="navlistitem"><a href="Galleries.html">GALLERIES</a> </li>
+		<li class="navlistitem"><a href="Download.html">DOWNLOAD</a></li>
+        <li class="navlistitem"><a href="Links.html">LINKS</a> </li>
+        <li class="navlistitem"><a href="Login.html">LOGIN</a> </li>
+	  <li class="navlistitem"><a href="Logout.html">LOGOUT</a> 
+	  <li class="navlistitem"><img src="C:\Users\afryn\CS251 PART 2\CSC574\Project 1\logo.png" alt="logo" width="150" height="60"></li>
+		
+		</ul>
+	</nav>
+        
+<style type="text/css">
+#main .left {
+ width: 1180px;
+ float: left;
+
+ padding: 0px 5px 0 10px;                     /* top , right , bottom , left */
+ 
+}
+</style>
+   
+   
+<div class="left">
+
+    
+    <div class="article">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <style>
+            .page-title{
+                color:#006633;
+            }
+            /* option:last-child{
+                color:#00cc00;
+                font-weight:bold;
+            } */
+
+            .frm-inpt{
+                width: 100%;
+                padding: 8px 10px;
+                box-sizing: border-box;
+                border:1px solid #006633;
+                border-radius :15px;
+                background: linear-gradient(21deg, #e7ffab, #c9f065)
+            }
+            .frm-inpt:focus{
+                background: linear-gradient(21deg, #e7ffab, #93c01f);
+                border:1px solid #006633;
+            }
+            .row{
+                float: none;
+            }
+            .btn_submit{
+                padding:8px;
+                cursor:pointer;
+                font-size:16px;
+                border-radius:10px;
+                color:black;
+                border:1px solid #006633;
+                background-color:white;
+            }
+            .btn_submit:hover{
+                border:1px solid black;
+                cursor:pointer;
+                font-size:16px;
+                border-radius:10px;
+                color:white;
+                background-color:#006633;
+            }
+            .warning{
+                color:red;
+                background-color: #ffffcc;
+                border-left: 6px solid red;
+                padding:8px;
+                width:250px;
+                border-radius:0 10px 10px 0;
+            }
+            .success{
+                color:green;
+                background-color: #ddffdd;
+                border-left: 6px solid #4CAF50;
+                padding:8px;
+                width:50%;
+            }
+            .red{
+                color:red;
+            }
+            #input_file {
+                width: 100%;
+                padding: 0px;
+                box-sizing: initial;
+                border:0px;
+                background-color: white;
+                border-radius: 0 15px 15px 0;
+            }
+            .select_a{
+                border-radius: 15px 0 0 15px;
+            }
+          
+            .notice{
+                color: rgb(20,147,164);
+
+font-weight: 400;
+                font-family: 'Palatino Linotype';
+                
+            }
+            .notice_p{
+                font-family: 'Quattrocento Sans';
+                text-align: justify;
+                text-justify: inter-word;
+            }
+            #focus_file{
+                color: red;
+                cursor: pointer;
+            }
+
+            @media only screen and (max-width: 768px) {
+                .success{
+                    width:100%;
+                }
+ 
+            }
+        }
+        
+        </style>
+
+        <div class="row_container">
+            <div class="row">
+                <h2 class="page-title">Sign Up</h2>      
+                <p id="input_enquiry" class="warning">*Fields are required to fill in.</p>
+            </div>
+        
+            <form enctype="multipart/form-data" method="post" id="contact-form">
+                 <div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>First Name</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="First Name" required></div>
+                </div>
+
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Last Name</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Last Name" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Gender</label></div>
+                    <div class="nine columns">  <select class="frm-inpt select_a" id="gender" name="Gender" required> <option value=""> Select an option... </option> <option value="Male">Male</option><option value="Female">Female</option></select></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Address 1</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Adress 1" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Address 2</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Adress 2" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>City</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="City" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>State</label></div>
+			<div class="nine columns"> <select class="frm-inpt select_a" id="state" name="State" required> <option value=""> Select an option... </option> <option value="Johor">Johor</option><option value="Melaka">Melaka</option><option value="Negeri Sembilan">Negeri Sembilan</option><option value="Selangor">Selangor</option><option value="Pahang">Pahang</option><option value="Perak">Perak</option><option value="Pulau Pinang">Pulau Pinang</option><option value="Kedah">Kedah</option><option value="Terengganu">Terengganu</option><option value="Kelantan">Kelantan</option><option value="Perlis">Perlis</option><option value="WP Kuala Lumpur">WP Kuala Lumpur</option><option value="WP Putrajaya">WP Putrajaya</option><option value="WP Labuan">WP Labuan</option><option value="Sabah">Sabah</option><option value="Sarawak">Sarawak</option></select></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Contact Number</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Contact_Number" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Email</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Email" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Educational Background</label></div>
+			<div class="nine columns"> <select class="frm-inpt select_a" id="edu" name="Educational Background" required> <option value=""> Select an option... </option> <option value="SPM">SPM</option><option value="STPM">STPM</option><option value="Diploma">Diploma</option><option value="Degree">Degree</option><option value="Master">Master</option><option value="PHD">PHD</option></select></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Username</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Username" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Password</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Password" required></div>
+                </div>
+			<div class="row">
+                    <div class="three columns"><label class="frm-title"><span class="red">*</span>Re-enter Password</label></div>
+                    <div class="nine columns"><input class="frm-inpt" name="Re-enter Password" required></div>
+                </div>
+
+<br>
+<br>
+
+			<div class="row">
+                   <button><a href="Homepage.html">Sign Up</a></button>
+			 <button><a href="Sign Up.html">Clear</a></button>
+ 			 <button><a href="Homepage.html">Cancel</a></button>
+
+
+<p class="w3-medium">
+All copyright <a href="Homepage.html" target="_blank">Afryna Sofea</a></p>
+
+</body>
+</html>
